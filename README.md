@@ -4,19 +4,6 @@
 The purpose of this lab is to get hands-on experience with Github classroom and
 create and submit a simple application for practice.
 
-## Register with GitHub
-- Refer to the document provided in the course about GitHub to correctly set up
-  git.
-- If you do not have a GitHub (https://www.github.com) account yet, you will
-  need to register in order to complete the assignments for this course.
-- You will need to setup the authentication method to access the
-  repositories in the future.
-
-  - [Generate your GitHub personal token][1] to use HTTPS protocol.
-  - **Must have the repo group checked for your token**
-
-[1]:https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
-
 ## Create a directory for this course
 Somewhere on your system, create a directory that you intend to use for this
 course if you have not done so already. It is nice to have one place to look
@@ -30,11 +17,9 @@ the git version control system.
 
 [2]: https://education.github.com/git-cheat-sheet-education.pdf
 
-- When you are prompt a roster, find your name and select it to link your
-  GitHub account that you are currently logged in to the name shown in the
-  roster. **Never skip this step if your name is present!** If your name is not
-  listed, skip this step and email me your GitHub account name and your full
-  name, and I will add you manually.
+- When prompted with the course roster, find your name and select it to link your
+  GitHub account. **CRITICAL: Please choose the right name and double-check before confirming!**
+  If your name is not listed or you encounter an issue, do not select someone else's name—contact the instructor immediately.
 - Click "Accept this assignment" button. This will create a new private
   repository for you to submit your work. You will need to wait a couple second
   for the system to create your repository and refresh to see the link to your
@@ -89,11 +74,12 @@ repository.
     Hello World!
     ```
 
-2. Test your program
+## Building and Testing
 
-    A Makefile is provided to enable automation
-    - run **make** to compile your **main** executable
-    - run **make test-output** to see if your output is valid
+A `Makefile` is provided to automate compilation and testing:
+- **Compile main program**: `make` or `make main`
+- **Verify program output**: `make test-output`
+- **Clean build artifacts**: `make clean`
 
 3. "Saving" work
 
